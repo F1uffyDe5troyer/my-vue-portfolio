@@ -435,9 +435,9 @@ section{
     line-height: 50px;
     transition: .5s;
 }
-.social-menu ul li .fa:hover {
+/* .social-menu ul li .fa:hover {
     color: #ffffff;
-}
+} */
 .social-menu ul li a {
     position: relative;
     display: block;
