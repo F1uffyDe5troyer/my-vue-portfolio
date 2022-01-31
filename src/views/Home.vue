@@ -8,22 +8,22 @@
   <ul>
     <h1 class="burger-h1">Where to?</h1>
     <li>
-      <a href="#Home">Home</a>
+      <a href="#home">Home</a>
     </li>
     <li>
-      <a href="#About">About</a>
+      <a href="#about">About</a>
     </li>
     <li>
-      <a href="#Skills">Skills</a>
+      <a href="#skills">Skills</a>
     </li>
      <li>
-      <a href="#Projects">Projects</a>
+      <a href="#projects">Projects</a>
     </li>
      <li>
-      <a href="#Testimonials">Testimonials</a>
+      <a href="#testimonials">Testimonials</a>
     </li>
      <li>
-      <a href="#Contact">Contact</a>
+      <a href="#contact">Contact</a>
     </li>
   </ul>
 </label>
@@ -212,7 +212,7 @@
         </div>
     </section>
 
-    <!-- Projects Section by Jason Wandrag-->
+    <!-- Projects Section -->
 
     <section class="projects" id="projects">
         <div class="max-width">
@@ -229,7 +229,6 @@
             <div class="project-container"></div>
         </div>
     </section>
-
     <!-- testimonial section start -->
     <section class="teams" id="teams">
         <div class="max-width">
