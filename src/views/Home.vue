@@ -28,7 +28,13 @@
   </ul>
 </label>
 </head>
-
+<body>
+    <!-- Home scroll button -->
+     <div class="bg-img" style="background-image: url('images/landing/bg.jpg')"> 
+    <div class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+     </div>
 
    <!-- home section start -->
     <section class="home" id="home">
@@ -58,12 +64,14 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/About/Dalarno.jpg" alt="">
+                    <img src="/images/About/Dalarno.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Dalarno and I'm a <span class="typing-2"></span></div>
                     <p class="about-p">HI! As you might have noticed my name is Dalarno Van Rooi, I am an Aspiring Developer who resides in the city of Cape Town. I've always been facinated with Developement whether in Application or Web. I am as of September 2021 learning to code and hope to make something out of it, if not.. I will continue and make it a hobby.</p>
                     <a href="Dalarno CV.pdf" target="_blank" download="Dalarno CV.pdf">Download CV</a>
+                    <br>
+                    <a href="Dalarno CV.pdf" target="_blank">View CV</a>
                 </div>
             </div>
         </div>
@@ -321,7 +329,8 @@
                 </div>
             </div>
         </div>
-    </section>      
+    </section>   
+</body>   
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="">Dalarno Van Rooi</a> | <span class=""></span> 2021 All rights reserved.</span>
@@ -348,8 +357,12 @@ export default {
   margin: 0;
   padding: 0;
   user-select: none;
+  
 }
 
+/* body {
+    background-image: url('images/landing/bg.jpg');
+} */
 
 label a {
   margin-bottom: 1em;
@@ -477,7 +490,7 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
+/* all similar content styling*/
 section{
     padding: 100px 0;
 }
@@ -530,89 +543,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-
 /* menu btn styling */
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-.scroll-up-btn:hover{
-    filter: brightness(90%);
-}
+
 
 
 /* home section styling */
