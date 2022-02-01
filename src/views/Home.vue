@@ -1,188 +1,4 @@
 <template>
-<div class="landing">
-	
-</div>
-<body>
-    <!-- Home scrohttps://i.postimg.cc/HLmdvZ85/Dalarno.jpgll button -->
- 
-
-   <!-- home section start -->
-<div class="landing">
-    <section class="home" id="home">
-        <div class="max-width">
-        <!-- socials icons -->
-            <div class="social-menu">
-                <ul>
-                  <li><a href="https://www.facebook.com/dalarno.vanrooi.52" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/ig_f1uffyde5troyer/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                  <!-- <li><a href="https://app.netlify.com/teams/f1uffyde5troyer/overview" target="_blank"><img  class="image12345-icon" src="images/icons/netlify-icon.png"></i></a></li> -->
-                  <li><a href="https://github.com/F1uffyDe5troyer" target="_blank"><i class="fa fa-github" target="_blank"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/dalarno-van-rooi-224222219/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Dalarno Van Roo<span class="letter-i">i</span></div>
-                <div class="text-3">And I'm a <span class="typewriter">  </span></div>
-                <a href="#contact">Hire me</a>
-            </div>     
-                </div>
-    </section>
-</div>
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="https://i.postimg.cc/HLmdvZ85/Dalarno.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Dalarno and I'm a <span class="typing-2"></span></div>
-                    <p class="about-p">HI! As you might have noticed my name is Dalarno Van Rooi, I am an Aspiring Developer who resides in the city of Cape Town. I've always been facinated with Developement whether in Application or Web. I am as of September 2021 learning to code and hope to make something out of it, if not.. I will continue and make it a hobby.</p>
-                    <a href="Dalarno CV.pdf" target="_blank" download="Dalarno CV.pdf">Download CV</a>
-                    <br>
-                    <a href="Dalarno CV.pdf" target="_blank">View CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   <!-- Work and Education -->
-   <section class="WorkEducation" id="we">
-         <div class="max-width">
-            <h2 class="title">My Experiences so far</h2>
-            <div class="container">
-                <div class="timeline">
-                  <div class="timeline-month">
-                    START
-                    <span>3 Entries</span>
-                  </div>
-                  <div class="timeline-section">
-                    <div class="timeline-date">
-                      2018
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="timeline-box">
-                          <div class="box-title">
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>High School
-                          </div>
-                          <div class="box-content">
-                            <a class="btn btn-xs btn-default pull-right">Achieved top 10 in my school for English</a>
-                            <div class="box-item"><strong>Mark: </strong>    </div>
-                            
-                          </div>
-                          <div class="box-footer">- DVR</div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="timeline-box">
-                          <div class="box-title">
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>MTPD Police force
-                          </div>
-                          <div class="box-content">
-                            <a class="btn btn-xs btn-default pull-right">Joined the MTPD bootcamp where I served for 1 year</a>
-                            <div class="box-item"><strong>Project Manager</strong>: Marlyn</div>
-                            <div class="box-item"><strong>Supervisor</strong>: Carol</div>
-                          </div>
-                          <div class="box-footer">- DVR</div>
-                        </div>
-                      </div>
-              
-                    </div>
-              
-                  </div>
-
-                      </div>
-              
-                    </div>
-              
-                  </div>
-</section>
-
-
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title"><span class="services-head>">My services</span></h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                        <div class="text">Web Design</div>
-                        <p>As of 2021 i started coding,I have an intermediate level of experience in the lanuages HTML,CSS/SASS,JavaScript/NodeJS.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-sliders-h"></i>
-                        <div class="text">Sound Design</div>
-                        <p>Although fairly new to Sound Design I enjoy using Programs like FL Studio to make music etcetra.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-video"></i>
-                        <div class="text">Video editing</div>
-                        <p>I from time to time edit random videos. I do not yet have a youtube account but will soon to show off my work.</p>
-                    </div>
-                </div>
-               </div>
-            </div>
-    </section>
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My skills & experiences.</div>
-                    <p>Here you can view a summary of my proficiency in the various Programs languages.</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>35%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>20%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>1%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
-                            <span>0%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>20%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
 
     <section class="projects" id="projects">
@@ -201,7 +17,7 @@
         </div>
     </section>
     <!-- testimonial section start -->
-    <section class="teams" id="teams">
+    <section id="teams">
         <div class="max-width">
             <h2 class="title">Testimonials</h2>
             <div class="carousel owl-carousel">
@@ -248,63 +64,8 @@
         </div>
     </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Like what you've seen so far? Get in Touch!</div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fa fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Dalarno Van Rooi</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">12 Fortress street, Cape Town</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">Dalarnoricardomilago@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/xnqleynr" method="POST" autocomplete="on" target="_blank">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" id="name" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" id="email" name="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>   
-</body>   
+  
+ 
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="">Dalarno Van Rooi</a> | <span class=""></span> 2021 All rights reserved.</span>
@@ -325,7 +86,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   border: 0;
