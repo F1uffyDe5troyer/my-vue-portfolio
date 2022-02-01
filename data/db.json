@@ -1,4 +1,3 @@
-
 let projects = [
     {
       id: 1,
@@ -51,49 +50,3 @@ let projects = [
       liveProjectURL: "https://sleepy-payne-35b730.netlify.app/"
     },
   ];
-  
-  function createCard(card) {
-    let createdCard = `<div class="project-card" techStack=${card.techStack} >
-        <img src="${card.imgURL}" alt="${card.imgALT}">
-        <h4>${card.title}</h4>
-        <h6>${card.techStack}</h6>
-        <p>${card.description}</p>
-        <a href="${card.githubURL}">Github</a>
-        <a href="${card.liveProjectURL}">Live</a>
-      </div>
-    `;
-    return createdCard;
-  }
-  
-  function renderCards() {
-    let projectContainer = document.querySelector(".project-container");
-    for (project of projects) {
-      let card = createCard(project);
-      projectContainer.innerHTML += card;
-    }
-  }
-  
-  renderCards();
-  
-  function filterCards(category) {
-    let cards = document.getElementsByClassName("project-card");
-  
-    if (category === "All") {
-      for (card of cards) {
-        card.style.display = "block";
-      }
-      return;
-    }
-  
-    for (card of cards) {
-      console.log(card);
-      card.style.display = "none";
-    }
-  
-    let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
-  
-    for (card of selectedCards) {
-      card.style.display = "block";
-    }
-  }
-  

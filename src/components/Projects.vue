@@ -1,4 +1,5 @@
 <template>
+<section id="projects">
   <h1>Projects</h1>
   <div class="projects" v-if="Projects.length">
     <div v-for="Project of Projects" :key="Project.id" class="Project">
@@ -15,6 +16,7 @@
   <div v-else>
     <p>Loading Projects...</p>
   </div>
+</section>
 </template>
 
 <script>

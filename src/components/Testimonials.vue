@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 <body>
-<section id="teams">
+<section id="testimonials">
   <div class="testimonials">
     <div class="testimonial-inner">
-      <h1>Testimonial</h1>
+      <h2 class="title">Testimonials</h2>
       <div class="border"></div>
       
       <div class="row">
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style scoped>
-    *
+*
 {
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@ export default {
 {
   padding: 40px 0;
   background: #000000;
-  color: #434343;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -150,7 +150,7 @@ export default {
 
 .testimonial
 {
-  background: #fff;
+  background: rgb(0, 0, 0);
   padding: 30px;
 }
 

@@ -418,7 +418,7 @@ section .title::after{
     background:crimson;
     position:relative;
     display:inline-block;
-    border-radius:20px;
+    border-radius:20px ;
     border:2px solid #ffffff;
     color:#fff;
   text-shadow:1px 1px 1px rgba(0,0,0,0.3);
