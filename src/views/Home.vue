@@ -1,9 +1,8 @@
 <template>
 <div class="landing">
 	<div class="logo">
-		<a href="#0">🐱</a>
+		<a href="#0"></a>
 	</div>
-	<h1>Cat Ipsum</h1>
 	<button class="nav-btn" aria-expanded="false" aria-controls="nav">
 		<span></span>
 		<span></span>
@@ -53,7 +52,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Dalarno Van Roo<span class="letter-i">i</span></div>
-                <div class="text-3">And I'm a <span class="typing">  </span></div>
+                <div class="text-3">And I'm a <span class="typewriter">  </span></div>
                 <a href="#contact">Hire me</a>
             </div>     
                 </div>
@@ -358,21 +357,26 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
+  border: 0;
   margin: 0;
   padding: 0;
   user-select: none;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 .landing {
     background-color: #000000;
 }
 
-* {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 :root {
 	font-size: calc(16px + (20 - 16)*(100vw - 320px)/(1024 - 320));
 }
@@ -1058,10 +1062,10 @@ p{
     background: crimson;
 }
 .services .serv-content .card .box{
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 .services .serv-content .card:hover .box{
-    transform: scale(1.05);
+    transform: scale(1.00);
 }
 .services .serv-content .card i{
     font-size: 50px;
