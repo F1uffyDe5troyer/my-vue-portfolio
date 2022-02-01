@@ -24,10 +24,10 @@
                      <span class="typing-demo">
                       Aspiring Developer.
                      </span>
-            </div>
-                <a href="#contact">Hire me?</a>
-            </div>     
                 </div>
+                <a href="#contact">Hire me?</a>
+             </div>     
+          </div>
     </section>
 </div>
   </body>

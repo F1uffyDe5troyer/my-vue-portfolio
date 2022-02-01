@@ -9,8 +9,8 @@
 <body>
 <section id="testimonials">
   <div class="testimonials">
+    <h2 class="title">About me</h2>
     <div class="testimonial-inner">
-      <h2 class="title">Testimonials</h2>
       <div class="border"></div>
       
       <div class="row">
