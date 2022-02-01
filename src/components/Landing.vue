@@ -20,7 +20,11 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Dalarno Van Roo<span class="letter-i">i</span></div>
-                <div class="text-3">And I'm a <span class="typewriter">  </span></div>
+                <div class="text-3">And I'm an
+                     <span class="typing-demo">
+                      Aspiring Developer.
+                     </span>
+            </div>
                 <a href="#contact">Hire me?</a>
             </div>     
                 </div>
@@ -35,6 +39,33 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 45px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 </style>

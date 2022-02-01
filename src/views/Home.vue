@@ -6,13 +6,6 @@
 export default {
   name: 'HelloWorld',
 }
-    // var typed = new typed(".typing", {
-    //     strings: ["YouTuber", "Developer", "Musician", "Designer", "Freelancer",  "Gamer",  "Memer"],
-    //     typeSpeed: 100,
-    //     backSpeed: 60,
-    //     loop: true
-    // });
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -652,8 +645,6 @@ p{
 .projects .title::after{
     content: "what i know";
 }
-
-
 
 .project-container {
     display: flex;

@@ -6,6 +6,7 @@
   <Services />
   <Skills />
   <Projects />
+  <!-- <ProjectDetails /> -->
   <Testimonials />
   <Contact />
   <Footer />
@@ -23,6 +24,7 @@
   import Projects from "@/components/Projects.vue";
   import Contact from "@/components/Contact.vue";
   import Footer from "@/components/Footer.vue";
+  // import ProjectDetails from "@/components/ProjectDetails.vue";
 
 
 
@@ -39,6 +41,7 @@
       Projects,
       Contact,
       Footer,
+      // ProjectDetails,
     }
   }
 </script>

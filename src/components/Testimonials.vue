@@ -112,7 +112,7 @@ export default {
 .testimonials
 {
   padding: 40px 0;
-  background: #f1f1f1;
+  background: #000000;
   color: #434343;
   text-align: center;
 }
