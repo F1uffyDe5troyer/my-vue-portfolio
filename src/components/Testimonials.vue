@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 <body>
+<section id="teams">
   <div class="testimonials">
     <div class="testimonial-inner">
       <h1>Testimonial</h1>
@@ -60,7 +61,7 @@
 
         <div class="col">
           <div class="testimonial">
-            <img src="https://i.postimg.cc/4xPsMv6S/Alex-Sexwale.jpg" alt="">
+            <img src="https://i.postimg.cc/FzVBRpHt/Amaarah.jpg" alt="">
             <div class="name">John Waddrob</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -75,7 +76,7 @@
         
         <div class="col">
           <div class="testimonial">
-            <img src="https://i.postimg.cc/3w0fpYxF/Cameron.jpg" alt="">
+            <img src="https://i.postimg.cc/kMv1Wjqz/Sergio.jpg" alt="">
             <div class="name">John Waddrob</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -90,6 +91,7 @@
       </div>
     </div>
   </div>
+</section>
 </body>
 </template>
 

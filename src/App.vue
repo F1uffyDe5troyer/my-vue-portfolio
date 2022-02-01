@@ -8,6 +8,7 @@
   <Projects />
   <Testimonials />
   <Contact />
+  <Footer />
   <router-view/>
 </template>
 
@@ -21,6 +22,7 @@
   import Testimonials from "@/components/Testimonials.vue";
   import Projects from "@/components/Projects.vue";
   import Contact from "@/components/Contact.vue";
+  import Footer from "@/components/Footer.vue";
 
 
 
@@ -36,6 +38,7 @@
       Testimonials,
       Projects,
       Contact,
+      Footer,
     }
   }
 </script>
