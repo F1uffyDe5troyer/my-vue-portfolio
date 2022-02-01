@@ -1,36 +1,25 @@
 <template>
-<head>
-<div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-      <label for="nav-toggle" class="navigation__button">
-        <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-      </label>
-      <div class="navigation__background"></div>
-
-      <nav class="navigation__nav" role="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span>Sobre</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02</span>Habilidades</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Trabalhos</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Eventos</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Contato</a>
-          </li>
-    </ul>
-  </nav>
-  <span id="by">&cop:ySthéffaneNunes</span>
+<div class="landing">
+<label>
+  <input type="checkbox">
+  <span class="menu">
+    <span class="hamburger"></span>
+  </span>
+  <ul>
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#we">work and Education</a>
+    </li>
+  </ul>
+</label>
 </div>
-</head>
 <body>
-    <!-- Home scroll button -->
+    <!-- Home scrohttps://i.postimg.cc/HLmdvZ85/Dalarno.jpgll button -->
  
 
    <!-- home section start -->
@@ -62,7 +51,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="/images/About/Dalarno.jpg" alt="">
+                    <img src="https://i.postimg.cc/HLmdvZ85/Dalarno.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Dalarno and I'm a <span class="typing-2"></span></div>
@@ -75,8 +64,8 @@
         </div>
     </section>
 
-   <!-- work and Education -->
-   <section class="WorkEducation" id="WE">
+   <!-- Work and Education -->
+   <section class="WorkEducation" id="we">
          <div class="max-width">
             <h2 class="title">My Experiences so far</h2>
             <div class="container">
@@ -234,7 +223,7 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/Testimonial/Alex Sexwale.JPG" alt="">
+                        <img src="https://i.postimg.cc/4xPsMv6S/Alex-Sexwale.jpg" alt="">
                         <div class="text">Alex Sexwale-</div>
                         <p>Dalarno produces quality work and continues to go the extra mile.He has the potential to achieve greatness given the chance he just might exceed expectations.He works well in groups and can takes control.</p>
                     </div>
@@ -242,7 +231,7 @@
                 <br>
                 <div class="card">
                     <div class="box">
-                        <img src="images/Testimonial/Cameron.JPG" alt="">
+                        <img src="https://i.postimg.cc/3w0fpYxF/Cameron.jpg" alt="">
                         <div class="text">Cameron Bowers-</div>
                         <p>Dalarno is a very friendly and hard-working individual.He does his best with any given task and always exceeds expectations.He has a keen eye for web-design, and always makes them stand out from others.</p>
                     </div>
@@ -250,7 +239,7 @@
                 <br>
                 <div class="card">
                     <div class="box">
-                        <img src="images/Testimonial/Dale.JPG" alt="">
+                        <img src="https://i.postimg.cc/5ybsZzqs/Dale.jpg" alt="">
                         <div class="text">Dale de Kock-</div>
                         <p class="card-text">Dalarno never fails to liven up a conversation with his presence. His positive demeanour and work ethic are nothing short of infectious. He would be a fantastic addition to any team that he finds himself on.</p>
                     </div>
@@ -258,7 +247,7 @@
                 <br>
                 <div class="card">
                     <div class="box">
-                        <img src="images/Testimonial/Amaarah.JPG" alt="">
+                        <img src="https://i.postimg.cc/FzVBRpHt/Amaarah.jpg" alt="">
                         <div class="text">Amaarah January-</div>
                         <p>Dalarno is a very creative, extremely hard-worker. He is very patient and will take his time to find the perfect solution to whatever he works on. He is the kind of person you can always go to for help.</p>
                     </div>
@@ -266,7 +255,7 @@
                 <br>
                 <div class="card">
                     <div class="box">
-                        <img src="images/Testimonial/Sergio.JPG" alt="">
+                        <img src="https://i.postimg.cc/kMv1Wjqz/Sergio.jpg" alt="">
                         <div class="text">Sergio Rodgers-</div>
                         <p>Dalarno is a hard-working individual and always has good energy.He works well in teams and is also a great leader.Given the opportunity to show his skills he will do exactly that and eventually more.</p>
                     </div>
@@ -358,213 +347,100 @@ export default {
   margin: 0;
   padding: 0;
   user-select: none;
-  
 }
 
-landing {
+.landing {
     background-color: #000000;
 }
 
-.navigation__checkbox {
-    display: none;
-}
-
-.navigation__button {
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
-    height: 5rem;
-    width: 5rem;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
-    z-index: 300;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    z-index: 101;
-}
-
-@media screen  and (min-width: 768px) {
-    .navigation__button {
-        top: 4rem;
-        right: 4rem;
-        height: 7rem;
-        width: 7rem;
-    }
-}
-
-.navigation__background {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background: #4A676A;
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-@media screen and (min-width: 768px) {
-    .navigation__background {
-        top: 4.5rem;
-        right: 4.5rem;
-        height: 6rem;
-        width: 6rem;
-    }
-}
-
-.navigation__nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    opacity: 0;
-    width: 0;
-    visibility: hidden;
-    z-index: 200;
-    transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.navigation__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    list-style: none;
-}
-
-.navigation__item {
-    margin: 1rem;
-}
-
-.navigation__link:link,
-.navigation__link:visited {
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-size: 2.4rem;
-    text-decoration: none;
-    transition: all .2s;
-}
-
-@media(min-width: 768px) {
-    .navigation__link:link,
-    .navigation__link:visited {
-        font-size: 3.8rem;
-    }
-}
-
-.navigation__link span {
-    margin-right: 1.5rem;
-    display: inline-block;
-}
-
-.navigation__link:hover {
-    color: #000000;
-    transform: scale(1.1);
-}
-
-.navigation__checkbox:checked~.navigation__background {
-    transform: scale(80)
-}
-
-.navigation__checkbox:checked~.navigation__nav {
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-}
-
-.navigation__icon {
-
-    position: relative;
-    margin-top: 2.5rem;
-}
-
-@media screen and (min-width: 768px) {
-    .navigation__icon {
-        margin-top: 3.5rem;
-    }
-}
-
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-    display: inline-block;
-    width: 2.2rem;
-    height: 2px;
-    background-color: #4A676A;
-}
-
-@media (min-width: 768px) {
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-        width: 3rem;
-    }
-}
-
-.navigation__icon::before,
-.navigation__icon::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    transition: all 200ms;
-}
-
-.navigation__icon::before {
-    top: -.8rem;
-}
-
-.navigation__icon::after {
-    top: .8rem;
-}
-
-.navigation__button:hover .navigation__icon::before {
-    top: -1rem;
-}
-
-.navigation__button:hover .navigation__icon::after {
-    top: 1rem;
-}
-
-.navigation__checkbox:checked+.navigation__button .navigation__icon {
-    background-color: transparent;
-}
-
-.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-}
-
-.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-}
-
-
-
-/*-----------------------*/
-#by {
-  font-family: 'Arima Madurai', cursive;
-  color: #4A676A;
-  font-size: 10px;
+label .hamburger {
   position: absolute;
-  top: 22%;
-  right: 2.5%; 
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
-/*
-light-blue: #C1D0D0;
-dark-blue: #4A676A;
-cream: #FFEAA5;
-yellow: #FFB037;
-*/
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
