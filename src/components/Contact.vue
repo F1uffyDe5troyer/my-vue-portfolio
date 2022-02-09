@@ -32,20 +32,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/xnqleynr" method="POST" autocomplete="on" target="_blank">
+                    <form @submit.prevent="handleSubmit" autocomplete="on" target="_blank" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" name="name" placeholder="Name" required>
+                                <input type="text" id="name" name="name" placeholder="Name" required v-model="name">
                             </div>
                             <div class="field email">
-                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required v-model="email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required v-model="subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Enter your message here..." required v-model="message"></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -59,7 +59,23 @@
 
 <script>
 export default {
-
+    data() {
+        return{
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+    }
+},
+methods: {
+    handleSubmit() {
+        console.log(`form submitted`)
+        console.log(this.name)
+        console.log(this.email)
+        console.log(this.subject)
+        console.log(this.message)
+    }
+}
 }
 </script>
 
