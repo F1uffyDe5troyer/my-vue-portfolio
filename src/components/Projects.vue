@@ -34,7 +34,7 @@ export default {
     };
   },
   mounted() {
-    fetch("http://localhost:5000/projects")
+    fetch("https://node-projects-and-testimonial.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => (this.projects = data))
       .catch((err) => console.log(err.message));

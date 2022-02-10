@@ -46,7 +46,7 @@ export default {
     };
   },
   mounted() {
-    fetch("http://localhost:5000/testimonials")
+    fetch("https://node-projects-and-testimonial.herokuapp.com/testimonials")
       .then((res) => res.json())
       .then((data) => (this.testimonials = data))
       .catch((err) => console.log(err.message));
