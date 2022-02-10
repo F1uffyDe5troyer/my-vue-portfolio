@@ -8,7 +8,7 @@
                     <div class="box">
                         <i class="fa fa-code" aria-hidden="true"></i>
                         <div class="text">Web Design</div>
-                        <p>As of 2021 i started coding,I have an intermediate level of experience in the lanuages HTML,CSS/SASS,JavaScript/NodeJS.</p>
+                        <p>As of 2021 i started coding,I have an intermediate level of experience in the lanuages HTML,CSS,JavaScript,Node,Mysql</p>
                     </div>
                 </div>
                 <div class="card">

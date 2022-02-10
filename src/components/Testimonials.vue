@@ -9,7 +9,7 @@
 <body>
 <section id="testimonials">
   <div class="testimonials">
-    <h2 class="title">About me</h2>
+    <h2 class="title">Testimonials</h2>
     <div class="testimonial-inner">
       <div class="border"></div>
       
@@ -17,7 +17,7 @@
         <div class="col">
           <div class="testimonial">
             <img src="https://i.postimg.cc/5ybsZzqs/Dale.jpg" alt="">
-            <div class="name">John Waddrob</div>
+            <div class="name">Dale de Kock</div>
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -97,8 +97,18 @@
 
 <script>
 export default {
-
-}
+  data() {
+    return {
+      testimonials: [],
+    };
+  },
+  mounted() {
+    fetch("http://localhost:5000/testimonials")
+      .then((res) => res.json())
+      .then((data) => (this.testimonials = data))
+      .catch((err) => console.log(err.message));
+  },
+};
 </script>
 
 <style scoped>

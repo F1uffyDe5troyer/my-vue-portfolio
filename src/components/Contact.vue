@@ -70,11 +70,23 @@ export default {
 methods: {
     handleSubmit() {
         console.log(`form submitted`)
-        console.log(this.name)
-        console.log(this.email)
-        console.log(this.subject)
-        console.log(this.message)
-    }
+        console.log(this.name, this.email, this.subject, this.message)
+        fetch('http://localhost:5000/contact', {
+  method: 'POST',
+  body: JSON.stringify({
+    name: this.name,
+    message: this.message,
+    email: this.email,
+    subject: this.subject,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  .catch((e) => alert(e.msg));
+    },
 }
 }
 </script>
