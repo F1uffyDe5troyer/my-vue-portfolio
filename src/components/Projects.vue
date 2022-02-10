@@ -1,11 +1,10 @@
 <template>
   <h1>Projects</h1>
-  <div class="skills-header"></div>
   <div class="projects" v-if="projects.length">
     <div
       v-for="project of projects"
       :key="project.id"
-      class="Testimonial"
+      class="projects"
     >
       <div class="cont">
         <div class="car">

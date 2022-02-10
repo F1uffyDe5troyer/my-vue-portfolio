@@ -4,20 +4,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=">
   <title>Responsive testimonials section using only HTML & CSS</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 <body>
 <section id="testimonials">
+    <div v-if="testimonials.length">
+    <div  v-for="testimonial of testimonials" :key="testimonial.id">
   <div class="testimonials">
-    <h2 class="title">Testimonials</h2>
     <div class="testimonial-inner">
-      <div class="border"></div>
-      
       <div class="row">
         <div class="col">
           <div class="testimonial">
-            <img src="https://i.postimg.cc/5ybsZzqs/Dale.jpg" alt="">
-            <div class="name">Dale de Kock</div>
+            <img :href="testimonials.img" alt="...">
+            <div class="name">{{testimonial.full_name}}</div>
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -25,71 +23,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="testimonial">
-            <img src="https://i.postimg.cc/4xPsMv6S/Alex-Sexwale.jpg" alt="">
-            <div class="name">John Waddrob</div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="testimonial">
-            <img src="https://i.postimg.cc/3w0fpYxF/Cameron.jpg" alt="">
-            <div class="name">John Waddrob</div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="testimonial">
-            <img src="https://i.postimg.cc/FzVBRpHt/Amaarah.jpg" alt="">
-            <div class="name">John Waddrob</div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="testimonial">
-            <img src="https://i.postimg.cc/kMv1Wjqz/Sergio.jpg" alt="">
-            <div class="name">John Waddrob</div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
+            <p>{{testimonial.comment}}</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
+  <div v-else>
+    <p>Loading...</p>
   </div>
 </section>
 </body>
@@ -116,7 +59,6 @@ export default {
 {
   margin: 0;
   padding: 0;
-  font-family: "montserrat", sans-serif;
 }
 
 .testimonials
