@@ -69,9 +69,8 @@ export default {
 },
 methods: {
     handleSubmit() {
-        console.log(`form submitted`)
         console.log(this.name, this.email, this.subject, this.message)
-        fetch('http://localhost:5000/contact', {
+        fetch('https://node-projects-and-testimonial.herokuapp.com/contact', {
   method: 'POST',
   body: JSON.stringify({
     name: this.name,
@@ -84,7 +83,7 @@ methods: {
   },
 })
   .then((response) => response.json())
-  .then((json) => console.log(json))
+  .then((json) => alert(json.msg))
   .catch((e) => alert(e.msg));
     },
 }

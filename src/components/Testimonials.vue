@@ -14,7 +14,8 @@
       <div class="row">
         <div class="col">
           <div class="testimonial">
-            <img :href="testimonials.img" alt="...">
+            <img :src="testimonial.img" :alt="loading" />
+
             <div class="name">{{testimonial.full_name}}</div>
             <div class="stars">
               <i class="fas fa-star"></i>
