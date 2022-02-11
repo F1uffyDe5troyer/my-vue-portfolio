@@ -20,7 +20,7 @@
                                 <div class="head">Address</div>
                                 <div class="sub-title">12 Fortress street, Cape Town</div>
                             </div>
-                        </div>
+                        </div>  
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">

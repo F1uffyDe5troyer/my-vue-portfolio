@@ -1,4 +1,5 @@
 <template>
+<section id="projects">
   <h1>Projects</h1>
   <div class="projects" v-if="projects.length">
     <div
@@ -14,6 +15,7 @@
           <div class="content">
             <h2>{{ project.title }}</h2>
             <h3>{{ project.stack }}</h3>
+			<a href="Dalarno CV.pdf" download="Dalarno CV.pdf">Download CV</a>
             <button><a :href="project.github">Github</a></button>
             <button><a :href="project.netlify">Netlify</a></button>
           </div>
@@ -24,6 +26,7 @@
   <div v-else>
     <p>Loading...</p>
   </div>
+</section>
 </template>
 
 <script>
@@ -43,169 +46,158 @@ export default {
 </script>
 
 <style scoped>
-p {
-	font-size:13px;
-	font-weight:500;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-p.label {
-	width:100%;
-	text-align:center;
-	color:#80919b;
-	font-size:12px;
-	line-height:20px;
+body {
+	background: #457fb4;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	height: 100vh;
 }
 
-.container {
-	width:100%;
-	max-width:1200px;
-	float:left;
+.hero-container {
+	margin: auto;
+	display: flex;
 }
 
-.projectList {
-	width:100%;
-	float:left;
-	list-style:none;
-	margin:0;
-	padding:10px;
+.main-container {
+	width: 270px;
+	height: 540px;
+	position: relative;
+	margin: 0 20px;
 }
 
-.projectList li {
-	width:25%;
-	float:left;
+.poster-container {
+	width: 230px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 9999;
 }
 
-@media only screen and (max-width:1023px) {
-	.projectList li {
-		width:33.333%;
+.poster {
+	width: 100%;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.ticket-container {
+	background: #fff;
+	width: 270px;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	opacity: 0;
+}
+
+.main-container:hover .ticket-container {
+	opacity: 1;
+	animation: bounceIn 0.6s linear;
+}
+
+@keyframes bounceIn {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	20% {
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.01, 1.01, 1.01);
+		transform: scale3d(1.01, 1.01, 1.01);
+	}
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
 	}
 }
 
-@media only screen and (max-width:779px) {
-	.projectList li {
-		width:50%;
-	}
+/* @keyframes bounce {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+.ticket__content {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
 }
 
-@media only screen and (max-width:539px) {
-	.projectList li {
-		width:100%;
-	}
+.ticket__movie-title {
+	text-transform: uppercase;
+	margin-bottom: 5px;
 }
 
-.projectList li .projectWrap {
-	width:100%;
-	float:left;
-	padding:100% 0 0 0;
-	position:relative;
+.ticket__movie-slogan {
+	color: #999;
+	font-size: 0.9rem;
+	margin-bottom: 20px;
 }
 
-.projectList li .projectWrap .inner {
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	padding:10px;
-	overflow:hidden;
+.ticket__current-price {
+	color: #69c982;
+	font-size: 1.4rem;
+	font-weight: bold;
 }
 
-.projectList li .projectWrap .inner .project {
-	width:100%;
-	height:100%;
-	float:left;
-	background:#fff;
-	border-radius:5px;
-	box-shadow:0px 2px 4px 1px rgba(56,72,84,0.1);
-	padding:10px;
-	position:relative;
-	overflow:hidden;
-	cursor:pointer;
-	
-	transition:transform 0.3s ease, box-shadow 0.3s ease;
+.ticket__old-price {
+	color: #999;
+	text-decoration: line-through;
+	margin-bottom: 10px;
 }
 
-.projectList li .projectWrap .inner .project .innerWrap {
-	width:100%;
-	height:100%;
-	float:left;
-	position:relative;
-	overflow:hidden;
-	border-radius:1px;
+.ticket__buy-btn {
+	cursor: pointer;
+	width: 100%;
+	background: #2f2f2f;
+	color: white;
+	padding: 15px 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
-.projectList li .projectWrap .inner .project .innerWrap .image {
-	width:100%;
-	height:100%;
-	float:left;
-	position:relative;
-	border-radius:1px;
-	background-size:cover;
-	background-position:center center;
-	background-repeat:no-repeat;
-	
-	
-	transition:transform 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .image:before {
-	content:'';
-	width:100%;
-	height:100%;
-	position:absolute;
-	border-radius:1px;
-	top:0;
-	left:0;
-	z-index:1;
-	background:rgba(56,72,84,0.5);
-	opacity:0;
-	
-	transition:opacity 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .metaWrap {
-	width:100%;
-	height:100px;
-	position:absolute;
-	bottom:0;
-	left:0;
-	z-index:2;
-	padding:0 10px 10px;
-	transform:translate3d(0px,20px,0px);
-	opacity:0;
-	
-	transition:transform 0.3s ease, opacity 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .meta {
-	width:100%;
-	height:100%;
-	background:rgba(255,255,255,1.0);
-	
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-}
-
-.projectList li .projectWrap .inner .project:hover {
-	transform:translate3d(0px,-5px,0px);
-	box-shadow:0px 5px 8px 3px rgba(56,72,84,0.2);
-}
-
-.projectList li .projectWrap .inner .project:hover .image {
-	transform:scale(1);
-}
-
-.projectList li .projectWrap .inner .project:hover .image:before {
-	opacity:1;
-}
-
-.projectList li .projectWrap .inner .project:hover .metaWrap {
-	transform:translate3d(0px,0px,0px);
-	opacity:1;
-}
-
-.projectList li .projectWrap .inner .project:hover .meta h5 {
-	transform:scale(1);
-}
 </style>
