@@ -12,9 +12,9 @@
                       Aspiring Developer.
                      </span> <span class="typing-2"></span></div>
                     <p class="about-p">HI! As you might have noticed my name is Dalarno Van Rooi, I am an Aspiring Developer who resides in the city of Cape Town. I've always been facinated with Developement whether in Application or Web. I am as of September 2021 learning to code and hope to make something out of it, if not.. I will continue and make it a hobby.</p>
-                    <a href="Dalarno CV.pdf" download="Dalarno CV.pdf">Download CV</a>
+                    <a href="./Dalarno CV.pdf" download="Dalarno CV.pdf">Download CV</a>
                     <br>
-                    <a href="Dalarno CV.pdf" target="_blank">View CV</a>
+                    <a href="./Dalarno CV.pdf" target="_blank">View CV</a>
                 </div>
             </div>
         </div>

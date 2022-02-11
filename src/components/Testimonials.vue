@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 <body>
-<section id="testimonials">
+<section id="Testimonials">
     <div v-if="testimonials.length">
     <div  v-for="testimonial of testimonials" :key="testimonial.id">
   <div class="testimonials">
@@ -15,6 +15,7 @@
         <div class="col">
           <div class="testimonial">
             <img :src="testimonial.img" :alt="loading" />
+
             <div class="name">{{testimonial.full_name}}</div>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -67,6 +68,11 @@ export default {
   background: #000000;
   color: #ffffff;
   text-align: center;
+  /* display:flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap:wrap; */
+
 }
 
 .testimonial-inner
