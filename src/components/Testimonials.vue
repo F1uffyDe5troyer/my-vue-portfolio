@@ -72,7 +72,6 @@ export default {
   gap: 30px;
   justify-content: center;
   flex-wrap:wrap; */
-
 }
 
 .testimonial-inner
