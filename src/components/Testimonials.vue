@@ -73,6 +73,11 @@ export default {
   color: white;
   margin-top: 20px;
 }
+
+/* .contact .title::after{
+    content: "get in touch";
+} */
+
 .testimonial_bg{
   background-color: rgb(0, 0, 0);
   align-items: center;
